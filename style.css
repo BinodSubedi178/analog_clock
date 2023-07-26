@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    --black:#000000;
+    --white:#b6b3b3;
+}
+body{
+    background: #000000;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:rgb(52, 52, 52);
+    height: 100vh;
+    width: 100%;
+}
+.outer-circle{
+    height:300px;
+    width: 300px;
+    display: flex;
+    border: 10px solid var(--white);
+    border-radius: 150%;
+    justify-content: center;
+    align-items: center;
+    background: rgb(25, 25, 25);
+    box-shadow: 0px 0px 45px rgb(25, 25, 25);
+}
+#hour,#minute,#second{
+    position: absolute;
+    background: var(--white);
+    border-radius: 10px;
+    transform-origin: bottom;
+    z-index: 3;
+}
+#hour{
+    width: 0.7%;
+    height: 9%;
+    top: 41.5%;
+    left: 49.7%;
+}
+#minute{
+    width: 0.55%;
+    height: 12%;
+    top: 38%;
+    left: 49.75%;
+}
+#second{
+    width: 0.45%;
+    height: 13%;
+    top: 37%;
+    left: 49.81%;
+}
+.center-circle{
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-color: var(--white);
+    left: 49.5%;
+    border-radius: 100%;
+    box-shadow: 0px 0px 45px rgb(25, 25, 25);
+    z-index: 2;
+}
+.numbers hr{
+    border: 5px solid var(--white);
+    height: 287px;
+    position: absolute;
+    top: 31.15%;
+    left: 49.8%;
+}
+.hr1{
+    transform: rotate(30deg);
+    left: 49.65% !important;
+}
+.hr3{
+    transform: rotate(90deg);
+    left: 49.65% !important;
+}
+.hr4{
+    transform: rotate(60deg);
+    left: 49.65% !important;
+}
+.hr5{
+    transform: rotate(120deg);
+    left: 49.65% !important;
+}
+.hr6{
+    transform: rotate(330deg);
+    left: 49.65% !important;
+}
+.inner-dialer{
+    position: absolute;
+    background: rgb(25, 25, 25);
+    height: 250px;
+    width: 250px;
+    border-radius: 100%;
+    z-index: 1;
+}
+p{
+    color: var(--white);
+    position: absolute;
+    z-index: 4;
+    font-size: 1.4rem;
+    left: 54.2%;
+
+}
+.reality-check{
+    position: absolute;
+    top: 10%;
+    left: 32.5%;
+    font-size: 3rem;
+    color: rgb(232, 230, 230);
+    font-family: 'Caprasimo', cursive;
+}
